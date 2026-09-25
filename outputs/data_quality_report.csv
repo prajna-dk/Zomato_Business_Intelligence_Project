@@ -1,0 +1,13 @@
+Dataset,Check,Status,Detail
+order_analytics,OrderID unique,PASS,0 duplicates
+order_analytics,FinalAmount >= 0,PASS,min=33.0
+order_analytics,DeliveryTimeMinutes >= 0,PASS,min=8.0
+order_analytics,CustomerID present,PASS,0 missing
+order_analytics,RestaurantID present,PASS,0 missing
+order_analytics,Row count,PASS,"20475 rows, 74 columns"
+customer_analytics,CustomerID unique,PASS,0 duplicates
+customer_analytics,Churn60 is binary,PASS,"values=[np.int64(0), np.int64(1)]"
+customer_analytics,Row count,PASS,"9254 rows, 24 columns, churn_rate=0.878"
+restaurant_analytics,RestaurantID unique,PASS,0 duplicates
+restaurant_analytics,"CancellationRate in [0,1]",PASS,ok
+restaurant_analytics,Row count,PASS,"1200 rows, 20 columns"

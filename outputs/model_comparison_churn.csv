@@ -1,0 +1,8 @@
+,Stage,Accuracy,Precision,Recall,F1,ROC_AUC
+Everyone churns (baseline),Naive baseline,0.878,0.878,1.0,0.935,0.5
+Decision Tree,Default,0.619,0.878,0.658,0.752,0.507
+Logistic Regression,Default,0.499,0.874,0.502,0.637,0.501
+Random Forest,Default,0.82,0.877,0.925,0.9,0.494
+Gradient Boosting,Default,0.579,0.875,0.607,0.717,0.487
+Logistic Regression,Tuned,0.5,0.873,0.503,0.639,0.501
+Decision Tree,Tuned,0.301,0.877,0.237,0.373,0.494
